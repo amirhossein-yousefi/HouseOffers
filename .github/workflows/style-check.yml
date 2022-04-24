@@ -1,0 +1,19 @@
+name: Style Checks
+
+on:
+  push:
+
+jobs:
+  lint:
+    runs-on: self-hosted
+    steps:
+      - name: Clone Repo
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Lint (flake8)
+        uses: ./.github/actions/lint
+        with:
+          path: ./app

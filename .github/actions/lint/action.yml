@@ -1,0 +1,21 @@
+name: PyLint Runner
+description: 'Checks python code style'
+inputs:
+  path:
+    description: Code path relative to repository
+    required: false
+    default: ./app
+
+runs:
+  using: composite
+  steps:
+    - name: Install Flake 8
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8
+      shell: bash
+    - name: Run flake8
+      run: |
+        echo "Running: flake8 ${{ inputs.path }}"
+        flake8 --extend-ignore=E203,E266,E501,F403,F401,E712 ${{ inputs.path }}
+      shell: bash
