@@ -126,3 +126,5 @@ tune the hyperparameters we should not use test data in order no to overestimate
 power I just use two chunk of train and test. It is so important that my test data has no contribution to select the hyperparameter of the model so as to prevent model from data leakage.
 
 NOTE:GermanBERT is based on [:hugs:Hugging Face](https://huggingface.co/)
+
+The full report of my method and results are found [here](https://drive.google.com/drive/folders/1yfHWzE1m3H81n7vtPc-roNnemuVZZjAB?usp=sharing)
