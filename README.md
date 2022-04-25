@@ -63,9 +63,11 @@ and **autogloun_without_text.ipynb**
 Note:All log of this model and weights(for with_text config) is [here](https://drive.google.com/drive/folders/1--CnHmK5DsPuEroyeYYCpXYWjCF28HW5?usp=sharing)
 and for without_text config model located at [here](https://drive.google.com/drive/folders/13-OYRaLfkvD2X4bvR2qxxWOSltc4f3CF?usp=sharing)
 
-THe results is as following:
+THe results for data without text(without facilities and description fields)(r2_score) is as following:
 <img src="/assets/img/results_without_text_r2score.png" alt="MarineGEO circle logo" style="height:500px; width:500px;"/>
 
+THe results for data with text(without facilities and description fields)(r2_score) is as following:
+<img src="/assets/img/r2_score_with_text.png" alt="MarineGEO circle logo" style="height:500px; width:500px;"/>
 ### GermanBert+MLP(MultiModal):
 This part is the most sophisticated part of my work
 where I combined the feature extracted from the BERT and
