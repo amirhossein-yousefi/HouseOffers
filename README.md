@@ -1,10 +1,33 @@
-# Rental offers
+# German rental offers
 
-```angular2html
+## Database
+In `schema_detection.py` we have looked to data frame and gathered some clue to design schema of tables 
+here is the design. 
+
+![](assets/img/schema.jpeg)
+
+
+sql schema migration to create tables in postgres is in `sql/create_tables.sql`.
+we also created a `VIEW` which shows aggregation of data. 
+
+we selected postgres docker image as our database and as its documents suggests we exposed our migrations to `docker-entrypoint-initdb.d/` of container, sql files which are in this directory will be run after starting the container.
+
+## Setup
+### Docker
+we have containerized our application project inside `Dockerfile-app` to keep setup process simple we have defined `docker-compose.yml` which serves both database and application
+
+to run the project in background run the following:
+```
 docker-compose up -d
 ```
 
-# Model versioning
+and to stop run the following command:
+```
+docker-compose down
+```
+
+
+## Model versioning
 This part is done using following steps:
 
 Installation:
@@ -34,7 +57,7 @@ This is a preprocessed version of immo_data.csv following instructions in [**dat
 immo_data_clean2.csv:
 
 This data is as same as immo_data_clean.csv but with
-**facilities** adn **description** columns in order to train the
+**facilities** and **description** columns in order to train the
 **BERT** for text.
 This data located at
 [here](
