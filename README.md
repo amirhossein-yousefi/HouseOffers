@@ -32,6 +32,7 @@ This is a preprocessed version of immo_data.csv following instructions in **data
 .This data located at [here](https://drive.google.com/file/d/1Imn04Y4tECUzDHU-0CjYhSXrv0VehGHb/view?usp=sharing)
 
 immo_data_clean2.csv:
+
 This data is as same as immo_data_clean.csv but with
 **facilities** adn **description** columns in order to train the
 **BERT** for text.
