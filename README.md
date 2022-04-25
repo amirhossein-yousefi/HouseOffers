@@ -25,7 +25,11 @@ and to stop run the following command:
 ```
 docker-compose down
 ```
-
+## Tests
+run the followings for test
+```angular2html
+pytest ./tests
+```
 
 ## Model versioning
 This part is done using following steps:
