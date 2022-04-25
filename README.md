@@ -82,7 +82,8 @@ This part is the most sophisticated part of my work
 where I combined the feature extracted from the BERT and
 numerical and boolean feature to train the final MLP the notebook related
 to this is **German_BERT_rent_prediction.ipynb**
-All log of this model and weights are [here] (https://drive.google.com/drive/folders/1f-j8H5j_Vnuih6qhps6TGYbbGZkpNuKB?usp=sharing)
+
+All log of this model and weights are [here](https://drive.google.com/drive/folders/1f-j8H5j_Vnuih6qhps6TGYbbGZkpNuKB?usp=sharing)
 
 As you may know that transformers computation is so high so I rent a **colabPRO** to train this model and takes about 6 hours
 to train on 2 epoch and reached to RMSE: 516.35.
