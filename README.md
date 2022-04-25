@@ -64,7 +64,7 @@ Note:All log of this model and weights(for with_text config) is [here](https://d
 and for without_text config model located at [here](https://drive.google.com/drive/folders/13-OYRaLfkvD2X4bvR2qxxWOSltc4f3CF?usp=sharing)
 
 THe results is as following:
-<img src="/assets/img/results_without_text_r2score.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+<img src="/assets/img/results_without_text_r2score.png" alt="MarineGEO circle logo" style="height:500px; width:500px;"/>
 
 ### GermanBert+MLP(MultiModal):
 This part is the most sophisticated part of my work
