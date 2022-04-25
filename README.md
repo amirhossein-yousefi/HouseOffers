@@ -41,8 +41,8 @@ https://drive.google.com/file/d/1dEWxv9TK6D53t_NK1069FsxMTXubLhO9/view?usp=shari
 
 
 ## Models:
- I have used many models for training on this data such as XgBoost,CatBoost,LightGBM,Neural Nets and for data which
-contains text data I have trained a **MultiModal Transformer** which consists of a German
+ I have used many models for training on this data such as XgBoost,CatBoost,LightGBM and Neural Nets and for data which
+contains text data(description and facilities fields included) I have trained a **MultiModal Transformer** which consists of a German
 Bert and MLP together.
 
 Note:Ensemble models perform better than Deep models
@@ -63,6 +63,8 @@ and **autogloun_without_text.ipynb**
 Note:All log of this model and weights(for with_text config) is [here](https://drive.google.com/drive/folders/1--CnHmK5DsPuEroyeYYCpXYWjCF28HW5?usp=sharing)
 and for without_text config model located at [here](https://drive.google.com/drive/folders/13-OYRaLfkvD2X4bvR2qxxWOSltc4f3CF?usp=sharing)
 
+THe results is as following:
+<img src="/assets/img/results_without_text_r2score.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
 
 ### GermanBert+MLP(MultiModal):
 This part is the most sophisticated part of my work
