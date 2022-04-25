@@ -76,6 +76,7 @@ THe results for data without text(without facilities and description fields)(r2_
 THe results for data with text(without facilities and description fields)(r2_score) is as following:
 
 <img src="/assets/img/r2_score_with_text.png" alt="MarineGEO circle logo" style="height:500px; width:500px;"/>
+
 ### GermanBert+MLP(MultiModal):
 
 This part is the most sophisticated part of my work
