@@ -97,3 +97,5 @@ to train on 2 epoch and reached to RMSE: 516.35.
 NOTE:We must partition data into three chunks of train,validation and test because when we want to
 tune the hyperparameters we should not use test data in order no to overestimate the performance of model but as I did not have enough computation
 power I just use two chunk of train and test. It is so important that my test data has no contribution to select the hyperparameter of the model so as to prevent model from data leakage.
+
+NOTE:GermanBERT is based on [:hugs:Hugging Face](https://huggingface.co/)
