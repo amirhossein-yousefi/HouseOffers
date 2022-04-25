@@ -67,10 +67,14 @@ and for without_text config model located at [here](https://drive.google.com/dri
 As mentioned, we have two type of data(with and without description and facilities) which we train 
 **AutoGloun** model for both of these data
 
+For training the **auto_gloun_with_text.ipynb** I have rented a colabPRO and it took
+about 6 hours to train this models as it used pretrained German BERT which is raely a big model.
 THe results for data without text(without facilities and description fields)(r2_score) is as following:
+
 <img src="/assets/img/results_without_text_r2score.png" alt="MarineGEO circle logo" style="height:500px; width:500px;"/>
 
 THe results for data with text(without facilities and description fields)(r2_score) is as following:
+
 <img src="/assets/img/r2_score_with_text.png" alt="MarineGEO circle logo" style="height:500px; width:500px;"/>
 ### GermanBert+MLP(MultiModal):
 This part is the most sophisticated part of my work
@@ -79,3 +83,5 @@ numerical and boolean feature to train the final MLP the notebook related
 to this is **German_BERT_rent_prediction.ipynb**
 All log of this model and weights are [here](https://drive.google.com/drive/folders/1f-j8H5j_Vnuih6qhps6TGYbbGZkpNuKB?usp=sharing)
 
+As you may know that transformers computation is so high so I rent a **colabPRO** to train this model and takes about 6 hours
+to train on 2 epoch and reached to RMSE: 516.35.
