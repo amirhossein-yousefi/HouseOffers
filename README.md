@@ -88,3 +88,8 @@ All log of this model and weights are [here](https://drive.google.com/drive/fold
 
 As you may know that transformers computation is so high so I rent a **colabPRO** to train this model and takes about 6 hours
 to train on 2 epoch and reached to RMSE: 516.35.
+
+
+NOTE:We must partition data into three chunks of train,validation and test because when we want to
+tune the hyperparameters we should not use test data in order no to overestimate the performance of model but as I did not have enough computation
+power I just use two chunk of train and test. It is so important that my test data has no contribution to select the hyperparameter of the model so as to prevent model from data leakage.
