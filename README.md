@@ -49,8 +49,19 @@ ensemble models(catboost,xgboost,LightGBM,CatBoost)
  
 ### XgBoost
 This model is based on gradient boosting and is one of the ensemble methods which is
-so powerful for tabular data
+so powerful for tabular data.
+This part is in the **xgboost_final.ipynb**
+
+Note: this model is trained on data without description and facilities fields
 
 ### AutoGloun(AutoML)
+This library contains almost all of ensemble models and some deep models such as BERT
+and after data preparation we feed the data into this model which all is in **auto_gloun_with_text.ipynb**
+and **autogloun_without_text.ipynb**
 
-### GermanBert+MLP(MultiModal)
+### GermanBert+MLP(MultiModal):
+This part is the most sophisticated part of my work
+where I combined the feature extracted from the BERT and
+numerical and boolean feature to train the final MLP the notebook related
+to this is **German_BERT_rent_prediction.ipynb**
+
