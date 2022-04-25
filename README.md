@@ -80,6 +80,7 @@ THe results for data with text(without facilities and description fields)(r2_sco
 
 ### GermanBert+MLP(MultiModal):
 This is a abstract view of my model:
+
 <img src="/assets/img/over_view_of_model.png" alt="MarineGEO circle logo" style="height:300px; width:300px;"/>
 
 This part is the most sophisticated part of my work
