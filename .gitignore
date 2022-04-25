@@ -4,3 +4,4 @@ postgres-data/
 .idea/*
 __pycache__/
 **/__pycache__
+/immo_data.csv
