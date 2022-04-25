@@ -27,7 +27,7 @@ https://drive.google.com/file/d/1Y6SIw4bsiULgjMMb6ePp7vjFi-SrVOpi/view?usp=shari
 
 immo_data_clean.csv:
 
-This is a preprocessed version of immo_data.csv following instructions in **data_prepare_visualize.ipynb** without text data 
+This is a preprocessed version of immo_data.csv following instructions in [**data_prepare_visualize.ipynb**](https://github.com/amirhossein-yousefi/HouseOffers/blob/master/data_prepare_visualize.ipynb) without text data 
 (description and facilities field )
 .This data located at [here](https://drive.google.com/file/d/1Imn04Y4tECUzDHU-0CjYhSXrv0VehGHb/view?usp=sharing)
 
@@ -53,14 +53,14 @@ ensemble models(catboost,xgboost,LightGBM,CatBoost)
 ### XgBoost
 This model is based on gradient boosting and is one of the ensemble methods which is
 so powerful for tabular data.
-This part is in the **xgboost_final.ipynb**
+This part is in the [**xgboost_final.ipynb**](https://github.com/amirhossein-yousefi/HouseOffers/blob/master/xgboost_final.ipynb)
 
 Note: this model is trained on data without description and facilities fields
 
 ### AutoGloun(AutoML)
 This library contains almost all of ensemble models and some deep models such as BERT
-and after data preparation we feed the data into this model which all is in **auto_gloun_with_text.ipynb**
-and **autogloun_without_text.ipynb**
+and after data preparation we feed the data into this model which all is in [**auto_gloun_with_text.ipynb**](https://github.com/amirhossein-yousefi/HouseOffers/blob/master/auto_gloun_with_text.ipynb)
+and [**autogloun_without_text.ipynb**](https://github.com/amirhossein-yousefi/HouseOffers/blob/master/autogloun_without_text.ipynb)
 
 Note:All log of this model and weights(for with_text config) is [here](https://drive.google.com/drive/folders/1--CnHmK5DsPuEroyeYYCpXYWjCF28HW5?usp=sharing)
 and for without_text config model located at [here](https://drive.google.com/drive/folders/13-OYRaLfkvD2X4bvR2qxxWOSltc4f3CF?usp=sharing)
@@ -68,8 +68,8 @@ and for without_text config model located at [here](https://drive.google.com/dri
 As mentioned, we have two type of data(with and without description and facilities) which we train 
 **AutoGloun** model for both of these data
 
-For training the **auto_gloun_with_text.ipynb** I have rented a colabPRO and it took
-about 6 hours to train this models as it used pretrained German BERT which is raely a big model.
+For training the [**auto_gloun_with_text.ipynb**](https://github.com/amirhossein-yousefi/HouseOffers/blob/master/auto_gloun_with_text.ipynb) I have rented a colabPRO(as it is a big model) and it took
+about 6 hours to train this model on it as it used pretrained German BERT which is raely a big model.
 THe results for data without text(without facilities and description fields)(r2_score) is as following:
 
 <img src="/assets/img/results_without_text_r2score.png" alt="MarineGEO circle logo" style="height:500px; width:500px;"/>
@@ -86,7 +86,7 @@ This is a abstract view of my model:
 This part is the most sophisticated part of my work
 where I combined the feature extracted from the BERT and
 numerical and boolean feature to train the final MLP the notebook related
-to this is **German_BERT_rent_prediction.ipynb**
+to this is [**German_BERT_rent_prediction.ipynb**](https://github.com/amirhossein-yousefi/HouseOffers/blob/master/German_BERT_rent_prediction.ipynb)
 
 All log of this model and weights are [here](https://drive.google.com/drive/folders/1f-j8H5j_Vnuih6qhps6TGYbbGZkpNuKB?usp=sharing)
 
