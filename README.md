@@ -60,8 +60,12 @@ Note: this model is trained on data without description and facilities fields
 This library contains almost all of ensemble models and some deep models such as BERT
 and after data preparation we feed the data into this model which all is in **auto_gloun_with_text.ipynb**
 and **autogloun_without_text.ipynb**
+
 Note:All log of this model and weights(for with_text config) is [here](https://drive.google.com/drive/folders/1--CnHmK5DsPuEroyeYYCpXYWjCF28HW5?usp=sharing)
 and for without_text config model located at [here](https://drive.google.com/drive/folders/13-OYRaLfkvD2X4bvR2qxxWOSltc4f3CF?usp=sharing)
+
+As mentioned, we have two type of data(with and without description and facilities) which we train 
+**AutoGloun** model for both of these data
 
 THe results for data without text(without facilities and description fields)(r2_score) is as following:
 <img src="/assets/img/results_without_text_r2score.png" alt="MarineGEO circle logo" style="height:500px; width:500px;"/>
