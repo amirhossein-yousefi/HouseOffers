@@ -25,14 +25,14 @@ immo_data.csv:
 This original data located at [here](
 https://drive.google.com/file/d/1Y6SIw4bsiULgjMMb6ePp7vjFi-SrVOpi/view?usp=sharing)
 
-immo_data_clean2.csv:
+immo_data_clean.csv:
 
 This is a preprocessed version of immo_data.csv following instructions in **data_prepare_visualize.ipynb** without text data 
 (description and facilities field )
 .This data located at [here](
 https://drive.google.com/file/d/1dEWxv9TK6D53t_NK1069FsxMTXubLhO9/view?usp=sharing)
 
-immo_data_clean.csv:
+immo_data_clean2.csv:
 This data is as same as immo_data_clean.csv but with
 **facilities** adn **description** columns in order to train the
 **BERT** for text.
@@ -43,5 +43,14 @@ This data is as same as immo_data_clean.csv but with
 contains text data I have trained a **MultiModal Transformer** which consists of a German
 Bert and MLP together.
 
+Note:Ensemble models perform better than Deep models
+for tabular data as our data is tabular, I follow almost all 
+ensemble models(catboost,xgboost,LightGBM,CatBoost)
  
 ### XgBoost
+This model is based on gradient boosting and is one of the ensemble methods which is
+so powerful for tabular data
+
+### AutoGloun(AutoML)
+
+### GermanBert+MLP(MultiModal)
